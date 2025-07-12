@@ -1,3 +1,177 @@
+/* Main Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  padding-bottom: 2rem;
+}
+
+/* Form Styling */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Card Styling */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #4285f4;
+  border-color: #4285f4;
+}
+
+.btn-primary:hover {
+  background-color: #3367d6;
+  border-color: #3367d6;
+}
+
+.btn-outline-primary {
+  color: #4285f4;
+  border-color: #4285f4;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4285f4;
+  border-color: #4285f4;
+}
+
+/* Rounded elements */
+.rounded-pill {
+  border-radius: 50rem;
+}
+
+/* Profile page styling */
+.profile-header {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.skill-badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50rem;
+  display: inline-block;
+}
+
+/* Navigation styling */
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* Cards */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem 1.25rem;
+}
+
+/* Skills */
+.skill-badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.remove-skill {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+/* Forms */
+.form-control:focus, .form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Admin Dashboard */
+.admin-sidebar {
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 56px);
+  position: sticky;
+  top: 56px;
+}
+
+.sidebar-card {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.admin-sidebar .nav-link {
+  color: #495057;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid transparent;
+}
+
+.admin-sidebar .nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.admin-sidebar .nav-link.active {
+  color: #007bff;
+  background-color: #e9ecef;
+  border-left: 3px solid #007bff;
+}
+
+.pagination .page-link {
+  color: #007bff;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+/* User Search Results */
+.user-search-container .card {
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.user-search-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +209,278 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Additional styles for wireframe matching */
+.rounded-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #555;
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link {
+  color: #555;
+  border: none;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: normal;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+/* Profile page specific styles */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+/* Profile Image Styles */
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-image-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #6c757d;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-image-edit {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.profile-image-edit:hover {
+  background-color: #0069d9;
+}
+
+/* Add these styles to the end of your existing App.css file */
+
+/* User Search Styling */
+.user-search-container .user-card {
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.user-search-container .user-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #555;
+}
+
+.skill-badge {
+  border-radius: 20px;
+  padding: 5px 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #eee;
+}
+
+/* Login Page Styling */
+.login-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.login-btn {
+  width: 50%;
+  padding: 10px;
+}
+
+/* Pagination Dots */
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #4285f4;
+}
+
+/* Profile Page Styling */
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Swap Request Styling */
+.swap-request-card {
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Form Controls */
+.form-control, .form-select {
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+/* Profile page specific styles */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+/* Profile Image Styles */
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-image-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #6c757d;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-image-edit {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.profile-image-edit:hover {
+  background-color: #0069d9;
 }
